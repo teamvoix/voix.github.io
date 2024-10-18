@@ -1,4 +1,4 @@
-import{b as n,P as o}from"./index.aec425b5.js";import{c as i}from"./vue-i18n.runtime.9c7874b8.js";var s={nav:{homepage:"About us",info:"Software development",ge:"GE Solutions",close:"Close"},about:{title:"About us",text:`We are a Kazakhstani IT company. We have been developing software solutions for more than 10 years.
+import{b as n,P as o}from"./index.eb31b3c4.js";import{c as i}from"./vue-i18n.runtime.b3204dc9.js";var s={nav:{homepage:"About us",info:"Software development",ge:"GE Solutions",close:"Close"},about:{title:"About us",text:`We are a Kazakhstani IT company. We have been developing software solutions for more than 10 years.
     During this time, we have accumulated extensive experience in the design and implementation of enterprise software, mobile solutions, as well as in integration tasks for automating business and technological processes of companies.`,infoLink:"Directions"},list:{header:"Our solutions",icon1:"dvr",title1:"Web-applications",text1:`Development of web applications 
 of any complexity level for medium and 
 large companies, which includes 
