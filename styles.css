@@ -856,6 +856,14 @@ a {
     padding-inline: var(--card-mobile-pad);
   }
 
+  .project > .project-copy {
+    order: 1;
+  }
+
+  .project > .project-visual {
+    order: 2;
+  }
+
   .panel-item {
     gap: 12px;
   }
