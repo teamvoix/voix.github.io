@@ -1,3 +1,469 @@
-<!DOCTYPE html><html><head><title>Voix LLC</title><meta charset=utf-8><meta name=description content="Voix LLC"><meta name=format-detection content="telephone=no"><meta name=msapplication-tap-highlight content=no><meta name=viewport content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"><link rel=icon type=image/png sizes=128x128 href="/icons/favicon-128x128.png"><link rel=icon type=image/png sizes=96x96 href="/icons/favicon-96x96.png"><link rel=icon type=image/png sizes=32x32 href="/icons/favicon-32x32.png"><link rel=icon type=image/png sizes=16x16 href="/icons/favicon-16x16.png"><link rel=icon type=image/ico href="/favicon.ico">  <script type="module" crossorigin src="/assets/index.e01c1f17.js"></script>
-  <link rel="stylesheet" href="/assets/index.a149fe01.css">
-</head><body><div id=q-app></div></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voix LLC — Разработка ПО любого уровня сложности на заказ</title>
+    <meta
+      name="description"
+      content="Voix проектирует GIS, web-платформы и интеграционные решения для телеком-компаний."
+    />
+    <script>
+      (() => {
+        const storageKey = "voix-theme";
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+          .matches
+          ? "dark"
+          : "light";
+        let theme = systemTheme;
+
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "dark" || savedTheme === "light") {
+            theme = savedTheme;
+          }
+        } catch (_error) {}
+
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Voix">
+          <img
+            class="brand-logo"
+            src="./assets/logo_dark.png"
+            data-logo-dark="./assets/logo_dark.png"
+            data-logo-light="./assets/logo.png"
+            alt="Voix"
+          />
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="#services">Направления</a>
+          <a href="#process">Процесс</a>
+          <a href="#projects">Проекты</a>
+          <a href="#ge">GE</a>
+        </nav>
+        <div class="header-tools">
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Переключить тему"
+            aria-pressed="false"
+          >
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb">
+                <span class="theme-glyph theme-glyph-sun">☀</span>
+                <span class="theme-glyph theme-glyph-moon">☾</span>
+              </span>
+            </span>
+          </button>
+          <a class="header-contact" href="mailto:team@voix.io">team@voix.io</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-backdrop" aria-hidden="true">
+            <div class="hero-orb hero-orb-one"></div>
+            <div class="hero-orb hero-orb-two"></div>
+            <div class="hero-grid"></div>
+          </div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Voix LLC · Almaty · since 2013</p>
+            <h1>
+              Создаём <span>GIS</span>
+              <span class="hero-tail">и web-платформы</span><br />
+              для телекома
+            </h1>
+            <p class="hero-lead">
+              Проектируем и внедряем интеграционные решения, которые связывают
+              сетевую инфраструктуру, внутренние процессы и сервисные операции
+              телеком‑компаний в одном рабочем контуре.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:team@voix.io"
+                >Обсудить проект</a
+              >
+              <a class="button button-secondary" href="tel:+77273315800"
+                >+7 (727) 331 58 00</a
+              >
+            </div>
+
+            <ul class="hero-facts" aria-label="Ключевые факты">
+              <li>
+                <strong>10+ лет</strong>
+                <span>в enterprise-разработке и автоматизации</span>
+              </li>
+              <li>
+                <strong>3 ключевых трека</strong>
+                <span>web, GIS и интеграция процессов</span>
+              </li>
+              <li>
+                <strong>8 технологий</strong>
+                <span>в актуальном инженерном стеке команды</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-panel">
+            <p class="panel-kicker">Что делаем</p>
+            <div class="panel-item">
+              <span>01</span>
+              <div>
+                <h2>Web‑приложения</h2>
+                <p>
+                  Полный цикл разработки для средних и крупных компаний: от
+                  бизнес‑анализа до поддержки и сопровождения.
+                </p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <span>02</span>
+              <div>
+                <h2>GIS</h2>
+                <p>
+                  Пространственный учёт сетевых объектов, инженерной
+                  инфраструктуры и кадастровых данных на картографической
+                  основе.
+                </p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <span>03</span>
+              <div>
+                <h2>Интеграция</h2>
+                <p>
+                  Модули для движения нарядов, интеграции web‑сервисов и
+                  автоматизации бизнес‑ и технологических процессов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section intro" id="services">
+          <div class="section-heading">
+            <p class="eyebrow">О компании</p>
+            <h2>Казахстанская команда, которая собирает сложные системы в работающий продукт</h2>
+          </div>
+          <div class="intro-layout">
+            <p>
+              За это время у Voix накопилась широкая экспертиза в проектировании
+              и внедрении корпоративного ПО, мобильных решений и интеграционных
+              задач для автоматизации бизнес‑ и технологических процессов.
+            </p>
+            <p>
+              Мы берёмся как за точечные интерфейсы и прикладные модули, так и
+              за большие производственные системы, где важны стабильность,
+              масштабируемость и понятная эксплуатация.
+            </p>
+          </div>
+        </section>
+
+        <section class="section services">
+          <div class="section-heading">
+            <p class="eyebrow">Направления</p>
+            <h2>Три основных слоя, на которых строится работа Voix</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service">
+              <p class="service-index">01</p>
+              <h3>Web‑приложения</h3>
+              <p>
+                Разработка приложений любого уровня сложности для среднего и
+                крупного бизнеса: аналитика, проектирование, разработка,
+                внедрение, тестирование, сопровождение и поддержка.
+              </p>
+            </article>
+            <article class="service">
+              <p class="service-index">02</p>
+              <h3>GIS</h3>
+              <p>
+                Географическая и пространственная модель объектов сетей связи,
+                инженерной инфраструктуры и кадастровой информации в одном
+                рабочем контуре.
+              </p>
+            </article>
+            <article class="service">
+              <p class="service-index">03</p>
+              <h3>Интеграция</h3>
+              <p>
+                Модули интеграции бизнес‑процессов, движения нарядов и
+                информационных web‑сервисов для единой операционной среды.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section process" id="process">
+          <div class="section-heading">
+            <p class="eyebrow">Процесс</p>
+            <h2>От аналитики до поддержки без разрыва между бизнесом и реализацией</h2>
+          </div>
+
+          <div class="process-layout">
+            <div class="process-copy">
+              <p>
+                Voix ведёт проекты сквозным циклом: от бизнес‑анализа и
+                проектирования до разработки, внедрения и поддержки в рабочей
+                эксплуатации.
+              </p>
+              <p>
+                Команда проектирует решения не вокруг модного стека, а вокруг
+                задачи: процессов заказчика, ограничений инфраструктуры и
+                эксплуатационной устойчивости продукта.
+              </p>
+            </div>
+
+            <ol class="process-list">
+              <li>Бизнес‑анализ</li>
+              <li>UI / UX дизайн</li>
+              <li>Разработка</li>
+              <li>Кроссплатформенные клиенты</li>
+              <li>Нативные клиенты</li>
+              <li>Тестирование</li>
+              <li>Поддержка</li>
+            </ol>
+          </div>
+
+          <ul class="principles">
+            <li>Максимальная прозрачность разработки для заказчика</li>
+            <li>Опыт работы с проектами любого уровня сложности</li>
+            <li>Мобильные приложения по современным требованиям</li>
+            <li>Глубокий анализ задачи до старта реализации</li>
+            <li>Современный UI/UX без перегруженных интерфейсов</li>
+            <li>Поддержка и оперативное решение эксплуатационных вопросов</li>
+          </ul>
+        </section>
+
+        <section class="section stack">
+          <div class="section-heading">
+            <p class="eyebrow">Стек</p>
+            <h2>Технологии, которые уже используются в текущих продуктах</h2>
+          </div>
+
+          <ul class="stack-list">
+            <li>NodeJS</li>
+            <li>Quasar</li>
+            <li>Golang</li>
+            <li>ReactJS</li>
+            <li>PostgreSQL</li>
+            <li>Java</li>
+            <li>Camunda</li>
+            <li>Clojure</li>
+          </ul>
+        </section>
+
+        <section class="section projects" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Проекты</p>
+            <h2>Три продуктовых кейса из текущего портфолио Voix</h2>
+          </div>
+
+          <article class="project project-left">
+            <div class="project-visual">
+              <img src="./assets/litemaps.webp" alt="Voix Lite!Maps" />
+            </div>
+            <div class="project-copy">
+              <p class="project-index">01</p>
+              <h3>Voix Lite!Maps</h3>
+              <p>
+                Продвинутая геоинформационная система с web‑интерфейсом для
+                создания единой централизованной базы активов предприятия.
+              </p>
+              <p>
+                Гибкое и масштабируемое решение, которое подходит как крупному и
+                среднему бизнесу, так и небольшим предприятиям.
+              </p>
+            </div>
+          </article>
+
+          <article class="project project-right">
+            <div class="project-copy">
+              <p class="project-index">02</p>
+              <h3>VCIP Switch Tools</h3>
+              <p>
+                Модуль для единичных и массовых переключений на оборудовании
+                оптической сети доступа с единым интерфейсом для медных и
+                оптических сценариев.
+              </p>
+              <p>
+                Пользователь получает полный набор функций для создания и
+                обработки заказов на переключение в одном рабочем окне.
+              </p>
+            </div>
+            <div class="project-visual">
+              <img src="./assets/switchtools.png" alt="VCIP Switch Tools" />
+            </div>
+          </article>
+
+          <article class="project project-left">
+            <div class="project-visual">
+              <img src="./assets/activator.png" alt="VCIP Activator" />
+            </div>
+            <div class="project-copy">
+              <p class="project-index">03</p>
+              <h3>VCIP Activator</h3>
+              <p>
+                Система обработки заказов и резервирования ресурсов для
+                телеком‑услуг: ШПД, телефонии, IPTV и других сервисов.
+              </p>
+              <p>
+                Автоматизирует workflow, резервирует ресурсы в медных,
+                оптических и беспроводных сетях и помогает проверять техническую
+                возможность подключения ещё до выезда.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="section ge" id="ge">
+          <div class="section-heading">
+            <p class="eyebrow">GE Solutions</p>
+            <h2>Экспертиза по GE Smallworld для инвентаризации и управления сетевой инфраструктурой</h2>
+          </div>
+
+          <div class="ge-layout">
+            <div class="ge-copy">
+              <h3>GE Smallworld Physical Network Inventory</h3>
+              <p>
+                Полное GIS‑представление сети даёт возможность видеть точное
+                расположение активов, их характеристики и взаимосвязи, а значит
+                эффективнее и дешевле предоставлять услуги с меньшими рисками.
+              </p>
+              <p>
+                Решение подходит для работы с масштабными телеком‑данными и
+                поддерживает сценарии от средних операторов до крупнейших
+                инфраструктурных компаний.
+              </p>
+            </div>
+
+            <ul class="ge-points">
+              <li>Масштабируемость для средних и небольших операторов</li>
+              <li>Работа с базами в сотни терабайт и тысячами пользователей</li>
+              <li>Быстрая поставка услуг с минимальными ошибками и рисками</li>
+              <li>Снижение времени на устранение неисправностей</li>
+              <li>Быстрый возврат инвестиций</li>
+              <li>Более 140 клиентов в 37 странах</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section cta">
+          <div class="cta-card">
+            <p class="eyebrow">Контакты</p>
+            <h2>Нужна система под вашу инфраструктуру и процессы?</h2>
+            <p>
+              Свяжитесь с командой напрямую, чтобы обсудить архитектуру,
+              интеграции и формат запуска проекта.
+            </p>
+            <div class="cta-actions">
+              <a class="button button-primary" href="mailto:team@voix.io"
+                >team@voix.io</a
+              >
+              <a class="button button-secondary" href="tel:+77273315800"
+                >+7 (727) 331 58 00</a
+              >
+            </div>
+            <p class="cta-address">
+              Республика Казахстан, г. Алматы, ул. Сатпаева 133/7, офис 127
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <img
+          class="brand-logo"
+          src="./assets/logo_dark.png"
+          data-logo-dark="./assets/logo_dark.png"
+          data-logo-light="./assets/logo.png"
+          alt="Voix"
+        />
+        <p>
+          Voix LLC. Разработка цифровых систем для телеком‑инфраструктуры.
+        </p>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const storageKey = "voix-theme";
+        const root = document.documentElement;
+        const toggle = document.querySelector("[data-theme-toggle]");
+        const logos = document.querySelectorAll(".brand-logo");
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const applyTheme = (theme, { persist = true } = {}) => {
+          root.dataset.theme = theme;
+          root.style.colorScheme = theme;
+
+          logos.forEach((logo) => {
+            logo.src =
+              theme === "light" ? logo.dataset.logoLight : logo.dataset.logoDark;
+          });
+
+          if (toggle) {
+            const isLight = theme === "light";
+            toggle.setAttribute("aria-pressed", String(isLight));
+            toggle.setAttribute(
+              "aria-label",
+              isLight ? "Включить тёмную тему" : "Включить светлую тему"
+            );
+          }
+
+          if (!persist) {
+            return;
+          }
+
+          try {
+            localStorage.setItem(storageKey, theme);
+          } catch (_error) {}
+        };
+
+        applyTheme(root.dataset.theme === "light" ? "light" : "dark", {
+          persist: false,
+        });
+
+        toggle?.addEventListener("click", () => {
+          const nextTheme = root.dataset.theme === "light" ? "dark" : "light";
+          applyTheme(nextTheme);
+        });
+
+        const syncWithSystem = (event) => {
+          let savedTheme = null;
+
+          try {
+            savedTheme = localStorage.getItem(storageKey);
+          } catch (_error) {}
+
+          if (savedTheme === "dark" || savedTheme === "light") {
+            return;
+          }
+
+          applyTheme(event.matches ? "dark" : "light", { persist: false });
+        };
+
+        if (typeof media.addEventListener === "function") {
+          media.addEventListener("change", syncWithSystem);
+        } else if (typeof media.addListener === "function") {
+          media.addListener(syncWithSystem);
+        }
+      })();
+    </script>
+  </body>
+</html>
