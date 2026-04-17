@@ -535,8 +535,20 @@ a {
   border-top: 1px solid var(--surface-border);
 }
 
+.service-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.service-index {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
 .service h3 {
-  margin-top: 10px;
+  margin: 0;
 }
 
 .process-list,
@@ -648,6 +660,18 @@ a {
   max-width: 520px;
 }
 
+.project-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.project-index {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
 .project-copy p {
   margin: 0 0 14px;
 }
@@ -668,18 +692,74 @@ a {
 }
 
 .ge .section-heading,
-.ge-layout {
+.ge-layout,
+.ge-media {
   position: relative;
   z-index: 1;
 }
 
 .ge-layout {
   padding: 8px 0 0;
+  align-items: start;
+}
+
+.ge-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.ge-copy p {
+  margin: 0;
+}
+
+.ge-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+  align-items: start;
+}
+
+.ge-media-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 12px;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  border: 1px solid var(--surface-border);
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.ge-media-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 16px;
+  transition: transform 0.6s ease;
+}
+
+.ge-media-card:hover img {
+  transform: scale(1.015);
+}
+
+.ge-media-card-large {
+  min-height: 0;
+}
+
+.ge-media-card:not(.ge-media-card-large) {
+  min-height: 0;
 }
 
 .ge-points {
   display: grid;
   gap: 14px;
+  align-content: start;
 }
 
 .cta {
@@ -852,8 +932,24 @@ a {
   }
 
   .ge .section-heading,
-  .ge-layout {
+  .ge-layout,
+  .ge-media {
     padding-inline: var(--card-mobile-pad);
+  }
+
+  .ge-media {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .ge-media-card,
+  .ge-media-card-large,
+  .ge-media-card:not(.ge-media-card-large) {
+    min-height: 0;
+    padding: 10px;
+    aspect-ratio: auto;
+    border-radius: 20px;
   }
 
   .project > .project-copy {
